@@ -1,0 +1,31 @@
+[Right]
+amp: 11
+high_left: 50
+high_right: 310
+mid_left: 70
+mid_right: 250
+low_left: 110
+low_right: 180
+
+[Left]
+amp: 9
+high_left: 270
+high_right: 50
+mid_left: 210
+mid_right: 70
+low_left: 170
+low_right: 110
+
+[Up]
+active: False
+amp: 10
+duty: 300
+
+[Brake]
+active: False
+amp: 8
+duty: 220
+low_left: 110
+low_right: 130
+high_left: 210
+high_right: 230

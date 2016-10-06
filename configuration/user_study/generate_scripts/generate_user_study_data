@@ -1,0 +1,8 @@
+#!/bin/sh
+read -p "really create a new user study file at ../data/function_data/userstudy8.config? [Yy]" -n 1 -r
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+        echo "Generating..."
+	python generate_user_study_8waves.py --output ../data/function_data/userstudy8.config
+        echo "Done. Saved to ../data/function_data/userstudy8.config"
+fi

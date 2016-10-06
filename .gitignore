@@ -6,6 +6,32 @@ __pycache__/
 # C extensions
 *.so
 
+# temp png from openCV
+muscleplotter/*.png
+
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+
+# Compiled Python files
+*.pyc
+
+# Compiled C++ files
+*.out
+
+# Application specific files
+venv
+node_modules
+.sass-cache
+
 # Distribution / packaging
 .Python
 env/
@@ -81,6 +107,9 @@ celerybeat-schedule
 # virtualenv
 venv/
 ENV/
+bin/
+include/
+pip-selfcheck.json
 
 # Spyder project settings
 .spyderproject
