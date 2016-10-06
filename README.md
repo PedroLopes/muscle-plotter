@@ -161,7 +161,7 @@ Dispatchers provide the parameters to the plotter. These parameters specify the 
 Each plotter has a single dispatcher associated with it at a given time. The active function to be served by ``Plotter`` is controlled by assigning another active dispatcher to the plotter.
 
 # Authors & more info
-Muscle-plotter is a work by [Pedro Lopes](http://plopes.org), [Doga Yueksel](https://dogayuksel.com/) and [Patrick Baudisch](http://www.patrickbaudisch.com/) (at the [Hasso Plattner Insititute](http://hpi.de).) You can find the paper, video and more information [here](http://hpi.de/baudisch/projects/muscleplotter)). 
+Muscle-plotter is a work by [Pedro Lopes](http://plopes.org), [Doga Yueksel](https://dogayuksel.com/), [François Guimbretière](http://www.cs.cornell.edu/~francois/) and [Patrick Baudisch](http://www.patrickbaudisch.com/) (at the [Hasso Plattner Insititute](http://hpi.de).) You can find the paper, video and more information [here](http://hpi.de/baudisch/projects/muscleplotter)). 
 
 ## credited code
 
