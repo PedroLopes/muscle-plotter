@@ -146,7 +146,7 @@ class ReachStats(object):
 
     def star_timer(self):
         if self.total_time == 0 and self.timer == 0:
-            print('Timer started')
+            print('TIMER: started')
             self.timer = time.time()
 
     def resume_timer(self):

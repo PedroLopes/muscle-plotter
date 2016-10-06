@@ -84,10 +84,10 @@ class ReachModel(object):
         while self.CONTROL_ON:
             plot_state = self._control_repetions()
             if plot_state == 'done':
-                print('Plot has ended')
+                print('PLOT: ended')
                 for i in range(50):
                     self.ems.pulsate(self.penup)
-                print('pen up has been sent')
+                print('ACTION: Pen Up')
                 break
             elif (plot_state == 'no sample' or
                   plot_state == 'no target' or
@@ -109,7 +109,7 @@ class ReachModel(object):
         time.sleep(self.fixed_delay * 2)
         self.stats.pause_timer()
         duration = self.stats.total_time
-        print('Plot Duration {0:5.1f} seconds.'.format(duration))
+        print('PLOT: Duration {0:5.1f} seconds.'.format(duration))
         # save to file: duration
         self.stats.print_timing_analysis()
         self.ems.print_timing_analysis()
@@ -229,20 +229,20 @@ class ReachModel(object):
                 tilted_speed = self.project_speed_to_tilted_axis(last_speed)
                 if (abs(tilted_speed[1]) < 0.1 and
                    not cycles == self.reach_repetitions):
-                    print('Brake is broken')
+                    print('BRAKE: ended')
                     self.BRAKE_MODE = False
                     return
             elif mode == 'travel':
                 if self.stats.check_target_crossing():
                     self.BRAKE_MODE = True
-                    print('done travel')
+                    print('TRAVEL: ended')
                     return
         if self.BRAKE_MODE:
             self.BRAKE_MODE = False
 
     def _execute_nudge(self):
         repeat = 9
-        print('sending nudges')
+        print('NUDGE: nudging')
         self.left.target_slope(20)
         for i in range(repeat):
             self.ems.pulsate(self.left)
