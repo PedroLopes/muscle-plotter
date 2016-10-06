@@ -13,7 +13,7 @@ If you are doing research in EMS this might be helpful:
 
 ## 2. Installing the software and running it
 
-Muscle-plotter is mainly developed in python. To run the next steps and configuring the software, it helps if you are familiar with development in Python. For your simplicity we describe below how to install using a virtual-environment (info [here](http://docs.python-guide.org/en/latest/dev/virtualenvs/)), if you desire to install it system-wide, just skip step 1. Here are the steps for installing (video tutorial here): 
+Muscle-plotter is mainly developed in python. To run the next steps and configuring the software, it helps if you are familiar with development in Python. For your simplicity we describe below how to install using a virtual-environment (info [here](http://docs.python-guide.org/en/latest/dev/virtualenvs/)), if you desire to install it system-wide, just skip step 1. Here are the steps for installing: 
 
 0. git clone (cloning muscle-plotter into your machine)
 1. virtualenv muscle-env (optional, you can skip to step 5 instead)
@@ -21,7 +21,7 @@ Muscle-plotter is mainly developed in python. To run the next steps and configur
 4. ``source muscle-env/bin/activate`` 
 5. ``pip install -r requirements.txt``
 
-Running muscle plotter (video tutorial here):
+Running muscle plotter:
 
 1. python ``run_demo.py`` (it will ask you which demo to run, you can jump start to a demo by using ``run_demo.py --demo 2` for example to start with wind tunnel simulator)
 2. start drawing and muscle-plotter will respond with muscle stimulation.
