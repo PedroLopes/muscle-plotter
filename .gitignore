@@ -8,6 +8,11 @@ __pycache__/
 
 # temp png from openCV
 muscleplotter/*.png
+muscleplotter/modules/windtunnel/data/load.png
+output/*.png
+output/*.mp4
+output/*.txt
+
 
 # Folder view configuration files
 .DS_Store
