@@ -20,7 +20,7 @@ class SerialThingy(object):
                                                  bytesize=serial.EIGHTBITS,
                                                  parity=serial.PARITY_NONE,
                                                  stopbits=serial.STOPBITS_TWO,
-                                                 rtscts=True,
+                                                 #rtscts=True,
                                                  timeout=1000)
                 if listening_serial_thread:
                     SerialThread.SerialThread(self.ser).start()
