@@ -97,9 +97,9 @@ class RandomSineDispatcher(SineDispatcher):
              'tilt': major_axis_tilt,
              'major': major_span,
              'minor': minor_span}
-        p['period'] = random.randint(1000, 7000)
-        p['amplitude'] = random.randint(200, 1200)
-        p['phase'] = random.randint(10, 170)
+        p['period'] = random.randint(4000, 7000)
+        p['amplitude'] = random.randint(200, 800)
+        p['phase'] = random.randint(0, 90)
         random_sine = canvas.SimpleSine(p['period'],
                                         p['amplitude'],
                                         p['phase'])
